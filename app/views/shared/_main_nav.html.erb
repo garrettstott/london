@@ -1,9 +1,19 @@
-<div class='main-nav'>
-  <div class='logo'>
-    <a href='/'>LOGO</a>
+<div class='main-nav-container'>
+  <div class='main-nav'>
+    <div class='logo'>
+      <a href='/'>LOGO</a>
+    </div>
+    <div class='links'>
+      <div>
+        <a href='/'>Buy</a>
+        <%= link_to( 'Account', new_user_session_path ) %>
+      </div>
+    </div>
   </div>
-  <div class='links'>
-    <a href='/'>Buy</a>
-    <a href='/'>Account</a>
+
+  <div class='flash-container'>
+    <% flash.each do |key, value| -%>
+        <div class="flash flash-<%= key %>"><%= value %></div>
+      <% end -%>
   </div>
 </div>

@@ -230,6 +230,27 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bcrypt (vbundled(3.1.13)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.13/ext" />
+          <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.13/lib" />
+          <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.13/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.13/ext" />
+          <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.13/lib" />
+          <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.13/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.13/ext" />
+          <root url="file://$MODULE_DIR$/gems/gems/bcrypt-3.1.13/spec" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="bindex (vbundled(0.8.1)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -388,6 +409,26 @@
         </SOURCES>
         <excluded>
           <root url="file://$MODULE_DIR$/gems/gems/crass-1.0.4/test" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="devise (vbundled(4.7.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/devise-4.7.1/app" />
+          <root url="file://$MODULE_DIR$/gems/gems/devise-4.7.1/lib" />
+          <root url="file://$MODULE_DIR$/gems/gems/devise-4.7.1/config" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/devise-4.7.1/app" />
+          <root url="file://$MODULE_DIR$/gems/gems/devise-4.7.1/lib" />
+          <root url="file://$MODULE_DIR$/gems/gems/devise-4.7.1/config" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/gems/gems/devise-4.7.1/config" />
         </excluded>
       </library>
     </orderEntry>
@@ -765,6 +806,27 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="orm_adapter (vbundled(0.5.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/lib" />
+          <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/gemfiles" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/spec" />
+          <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/gemfiles" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="public_suffix (vbundled(4.0.1)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -1021,6 +1083,19 @@
         <excluded>
           <root url="file://$MODULE_DIR$/gems/gems/regexp_parser-1.6.0/spec" />
         </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="responders (vbundled(3.0.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/responders-3.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/responders-3.0.0/lib" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -1316,6 +1391,19 @@
         <excluded>
           <root url="file://$MODULE_DIR$/gems/gems/tzinfo-1.2.5/test" />
         </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="warden (vbundled(1.2.8)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/warden-1.2.8/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/warden-1.2.8/lib" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
