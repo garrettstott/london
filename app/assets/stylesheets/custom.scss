@@ -13,6 +13,7 @@ $LightSpecial: #00c8f8;
 
 body, html {
   font-family: 'avant garde',sans-serif;
+  color: $Black;
 }
 
 /*=========================================================
@@ -33,6 +34,9 @@ MAIN NAV
   width: calc(100% - 32px);
   display: flex;
   padding: 16px;
+  .logo {
+    font-size: 2em;
+  }
   .links, .logo {
     display: flex;
     flex: 1;
@@ -187,7 +191,7 @@ body {
 
 .main-content {
   min-height: 80%;
-  margin-top: 50px;
+  margin-top: 69px;
 }
 
 .main-content {
@@ -254,7 +258,7 @@ FLASH
 .flash-container {
   position: absolute;
   width: 100%;
-  top: 50px;
+  top: 69px;
 }
 
 .flash {

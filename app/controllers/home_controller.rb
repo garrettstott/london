@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-  def index
+  def landing
     # flash[:notice] = 'Notice'
     # flash[:alert] = 'Alert'
     # flash[:success] = 'Success'
