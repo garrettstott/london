@@ -7,15 +7,18 @@
     </div>
     <div class='links'>
       <div>
-        <a href='/'>Buy</a>
-        <%= link_to( 'Account', new_user_session_path ) %>
+        <%= link_to 'Tracks', tracks_path %>
+        <%= link_to 'Buy', tracks_path %>
+        <%= link_to( 'Account', account_path ) %>
       </div>
     </div>
   </div>
 
   <div class='flash-container'>
     <% flash.each do |key, value| -%>
-        <div class="flash flash-<%= key %>"><%= value %></div>
+        <div class="flash flash-<%= key %>">
+          <%= value %>
+        </div>
       <% end -%>
   </div>
 </div>

@@ -6,4 +6,13 @@ Rails.application.routes.draw do
   devise_for :users
 
   get '/tracks', to: 'tracks#index'
+  get '/tracks/search_name', to: 'tracks#search_name'
+  get '/tracks/search_key_name', to: 'tracks#search_key_name'
+  get '/tracks/search_bpm', to: 'tracks#search_bpm'
+
+  get '/account', to: 'account#index'
+
+  post '/tracks/search_name', to: 'tracks#search_name'
+  post '/tracks/search_key_name', to: 'tracks#search_key_name'
+  post '/tracks/search_bpm', to: 'tracks#search_bpm'
 end

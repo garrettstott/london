@@ -377,6 +377,24 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="coderay (vbundled(1.1.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/coderay-1.1.2/bin" />
+          <root url="file://$MODULE_DIR$/gems/gems/coderay-1.1.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/coderay-1.1.2/bin" />
+          <root url="file://$MODULE_DIR$/gems/gems/coderay-1.1.2/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/gems/gems/coderay-1.1.2/bin" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="concurrent-ruby (vbundled(1.1.5)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
@@ -823,6 +841,24 @@
         <excluded>
           <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/spec" />
           <root url="file://$MODULE_DIR$/gems/gems/orm_adapter-0.5.0/gemfiles" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="pry (vbundled(0.12.2)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/gems/gems/pry-0.12.2/bin" />
+          <root url="file://$MODULE_DIR$/gems/gems/pry-0.12.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/gems/gems/pry-0.12.2/bin" />
+          <root url="file://$MODULE_DIR$/gems/gems/pry-0.12.2/lib" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/gems/gems/pry-0.12.2/bin" />
         </excluded>
       </library>
     </orderEntry>
@@ -1535,7 +1571,7 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.3, RVM: ruby-2.6.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.0.2, RVM: ruby-2.6.3) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

@@ -11,6 +11,14 @@ $Grey: #444444;
 $Special: #00b2dd;
 $LightSpecial: #00c8f8;
 
+.color-special {
+  color: $Special;
+}
+
+.color-special:hover {
+  color: $LightSpecial;
+}
+
 body, html {
   font-family: 'avant garde',sans-serif;
   color: $Black;
@@ -181,12 +189,66 @@ HOME
 }
 
 /*=========================================================
+TRACKS
+=========================================================*/
+
+.tracks-container {
+  background: $Black;
+  color: $White;
+  margin-bottom: 120px;
+  padding-top: 62px;
+  .tracks {
+    margin: auto;
+    max-width: 860px;
+    .track {
+      padding: 0 4px 8px 4px;
+      display: flex;
+      border-bottom: 1px solid $Grey;
+      margin: 8px 0;
+      div {
+        margin: auto;
+        text-align: right;
+        flex: 1;
+      }
+      .name {
+        flex: 5;
+      }
+      .sample-container, .name {
+        text-align: left;
+      }
+      .sample {
+        cursor: pointer;
+        font-size: 2em;
+      }
+      .sample:hover {
+        color: lighten($Grey, 25%);
+      }
+      .color-special:hover {
+        color: $LightSpecial;
+      }
+    }
+    .header {
+      padding: 8px 4px;
+    }
+  }
+}
+
+/*=========================================================
+ACCOUNT
+=========================================================*/
+
+.account-container {
+  margin-bottom: 120px;
+}
+
+/*=========================================================
 STICKY FOOTER
 =========================================================*/
 
 html,
 body {
   height: 100%;
+  background: $Black;
 }
 
 .main-content {
@@ -196,15 +258,15 @@ body {
 
 .main-content {
   overflow: auto;
-  padding-bottom: 180px;
-  background: $White;
+  padding-bottom: 304px;
+  background: $Black;
   z-index: 2;
   /* must be same height as the footer */
 }
 
 .main-footer {
   position: relative;
-  margin-top: -180px;
+  margin-top: -304px;
   /* negative value of footer height */
   height: 180px;
   clear: both;
@@ -290,7 +352,7 @@ form {
   width: 100%;
   max-width: 600px;
   margin: auto;
-  input[type='email'], input[type='password'] {
+  input[type='email'], input[type='password'], input[type='text'] {
     width: 100%;
     background: transparent;
     border: 0;

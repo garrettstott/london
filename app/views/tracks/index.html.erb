@@ -1,1 +1,110 @@
-<h1>Tracks</h1>
+<div class='tracks-container'>
+  <div class='tracks'>
+    <h1>Tracks</h1>
+    <div class='search-container'>
+      <%= form_tag('/tracks/search_name') do %>
+        <input
+          type='text'
+          name='term'
+          placeholder='Name'
+          value="<%= @name_term %>"
+          required
+        />
+        <%= submit_tag "Name", id: "name-submit", data: { disable_with: "Searching..." } %>
+      <% end %>
+      <%= form_tag('/tracks/search_key_name') do %>
+        <input
+          type='text'
+          name='term'
+          placeholder='Key'
+          value="<%= @key_term %>"
+          required
+        />
+        <%= submit_tag "Key", id: "key-submit", data: { disable_with: "Searching..." } %>
+      <% end %>
+        <%= form_tag('/tracks/search_bpm') do %>
+        <input
+          type='text'
+          name='term'
+          placeholder='BPM'
+          value="<%= @bpm_term %>"
+          required
+        />
+        <%= submit_tag "BPM", id: "bpm-submit", data: { disable_with: "Searching..." } %>
+      <% end %>
+    </div>
+    <div class='track header'>
+      <div class='sample-container'>
+        Sample
+      </div>
+      <div class='name'>
+        <%= link_to 'Name', tracks_path(sort: 'name', order: @order) %>
+      </div>
+      <div>
+        <%= link_to 'Key', tracks_path(sort: 'key_name', order: @order) %>
+      </div>
+      <div>
+        <%= link_to 'BPM', tracks_path(sort: 'bpm', order: @order) %>
+      </div>
+    </div>
+    <% @tracks.each do |track| %>
+      <div class='track'>
+        <div class='sample-container'>
+          <audio id="sample-<%= track.id %>">
+            <source src="<%= audio_path(track.sample) %>" type="audio/mp3">
+          </audio>
+          <i class='fa fa-play-circle sample' id="<%= track.id %>-play"></i>
+        </div>
+        <div class='name'>
+          <%= track.name %>
+        </div>
+        <div>
+          <%= track.key_name %>
+        </div>
+        <div>
+          <%= track.bpm %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    // get all play icons and loop over them
+    let plays = document.getElementsByClassName('fa-play-circle');
+    for ( let i = 0; i < plays.length; i++ ) {
+      let play = plays[i];
+      // get the html audio associated with the icon
+      let sample = document.getElementById('sample-' + play.id.replace('-play', ''));
+      // add the click
+      play.addEventListener('click', function() {
+        // get all other samples, pause, reset current time, and reset their icons
+        let samples = document.getElementsByTagName('audio');
+        for ( let i2 = 0; i2 < samples.length; i2++ ) {
+          let thisSample = samples[i2];
+          if ( thisSample.id !== sample.id ) {
+            thisSample.pause();
+            thisSample.currentTime = 0;
+            let thisPlay = document.getElementById(thisSample.id.replace('sample-', '') + '-play');
+            thisPlay.classList.add('fa-play-circle');
+            thisPlay.classList.remove('fa-pause-circle');
+            thisPlay.classList.remove('color-special');
+          }
+        }
+        // check if the sample clicked is paused and set it's icon
+        if ( sample.paused ) {
+          sample.play();
+          play.classList.remove('fa-play-circle');
+          play.classList.add('fa-pause-circle');
+          play.classList.add('color-special');
+        } else {
+          sample.pause();
+          play.classList.add('fa-play-circle');
+          play.classList.remove('fa-pause-circle');
+          play.classList.remove('color-special');
+        }
+      });
+    }
+  });
+</script>

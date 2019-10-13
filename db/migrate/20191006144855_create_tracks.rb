@@ -6,7 +6,7 @@ class CreateTracks < ActiveRecord::Migration[6.0]
 
       t.integer :bpm
       t.string :name
-      t.string :key
+      t.string :key_name
     end
   end
 end
